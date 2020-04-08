@@ -35,3 +35,10 @@ var app5 = new Vue({
     }
   }
 })
+
+var app6 = new Vue({
+  el: '#app6',
+  data: {
+    message: 'This is a short message.'
+  }
+})
