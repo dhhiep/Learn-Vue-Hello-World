@@ -42,3 +42,14 @@ var app6 = new Vue({
     message: 'This is a short message.'
   }
 })
+
+var app7 = new Vue({
+  el: '#app7',
+  data: {
+    groceryList: [
+      { id: 0, text: 'Cà pháo' },
+      { id: 1, text: 'Mắm tôm' },
+      { id: 2, text: 'Miễn ăn được là được' }
+    ]
+  }
+})
