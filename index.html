@@ -27,9 +27,18 @@
       <span v-if="seen">This is content :D</span>
     </div>
     <hr>
-
     
+    <h3>Ex 4: Loop</h3>
+    <div id="app4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+    <hr>
   </body>
+   
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="script.js"></script>
 </html>
