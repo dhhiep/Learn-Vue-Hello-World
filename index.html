@@ -7,17 +7,28 @@
   </head>
   <body>
     <div id="app">
+      <h3>Ex 1: Show text VueJS - HelloWorld on homepage</h3>
       <div>
         {{ message }}
       </div>
-      
-      <br>
+      <hr>
+
+      <h3>Ex 2: Add directive v-bind:title to show title in VueJS</h3>
       <div>
         <span v-bind:title="hover_title">
           <input type="button" value="Hover Me!!!">
         </span>
       </div>
     </div>
+    <hr>
+    
+    <h3>Ex 3: Show/Hide content by condition</h3>
+    <div id="app2">
+      <span v-if="seen">This is content :D</span>
+    </div>
+    <hr>
+
+    
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="script.js"></script>

@@ -5,3 +5,10 @@ var app = new Vue({
     hover_title: 'Current time is ' + new Date().toLocaleTimeString()
   }
 })
+
+var app2 = new Vue({
+  el: '#app2',
+  data: {
+    seen: true
+  }
+})
