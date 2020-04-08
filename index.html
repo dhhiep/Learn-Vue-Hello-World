@@ -62,8 +62,32 @@
         </todo-item>
       </ol>
     </div>
+    <hr>
+
+    <h3>Ex 8: Todo App</h3>
+    <div id="todoApp">
+      <input 
+        v-model="tmpNewTitle"
+        @keyup.enter="addNewItem"
+        placeholder="Add new Todo"
+      >
+
+      <ol>
+        <li
+          is='todo-app'
+          v-for="(todo, index) in todos"
+          :key="todo.id"
+          :title="todo.title"
+          @remove="removeItem(todo, index)"
+        >
+        </li>
+      </ol>
+
+      <br v-for="n in 10">
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="components/todo-item/main.js"></script>
+  <script src="components/todo-app/main.js"></script>
   <script src="script.js"></script>
 </html>
